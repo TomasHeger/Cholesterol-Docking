@@ -1,0 +1,26 @@
+<BundleInfo name="ChimeraX-CholesterolDocking"
+    version="0.7.0" package="chimerax.cholesterol_docking"
+    minSessionVersion="1" maxSessionVersion="1">
+  <Author>Tomas Heger</Author>
+  <Email>tom.chnapik@gmail.com</Email>
+  <URL>https://github.com/TomasHeger/Cholesterol-Docking</URL>
+  <Synopsis>Automated cholesterol docking into cryo-EM density</Synopsis>
+  <Description>Detects membrane-associated cholesterol-like density, rigid-body docks CLR, rescues head-tail orientation, jointly optimizes neighboring rods, classifies confidence, and records detailed rejection diagnostics.</Description>
+  <Categories>
+    <Category name="Structure Analysis"/>
+  </Categories>
+  <DataFiles>
+    <DataFile>docs/user/commands/choldock7.html</DataFile>
+    <DataFile>docs/user/tools/cholesterol_docking.html</DataFile>
+  </DataFiles>
+<Dependencies>
+    <Dependency name="ChimeraX-Core" version="~=1.0"/>
+    <Dependency name="ChimeraX-UI" version="~=1.0"/>
+</Dependencies>
+  <Classifiers>
+    <PythonClassifier>Development Status :: 4 - Beta</PythonClassifier>
+    <PythonClassifier>License :: OSI Approved :: MIT License</PythonClassifier>
+    <ChimeraXClassifier>ChimeraX :: Command :: choldock7 :: Structure Analysis :: Automated multi-site cholesterol docking into cryo-EM density</ChimeraXClassifier>
+    <ChimeraXClassifier>ChimeraX :: Tool :: Cholesterol Docking V7 :: Structure Analysis :: Automated cholesterol docking and diagnostics</ChimeraXClassifier>
+  </Classifiers>
+</BundleInfo>

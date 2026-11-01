@@ -1,0 +1,24 @@
+<html><head><title>Command: choldock7</title></head><body>
+<h2>Command: choldock7</h2>
+<p>Automated rigid-body docking of cholesterol (PDB CCD component CLR) into multiple cryo-EM density sites.</p>
+<h3>Usage</h3>
+<pre>choldock7 map-spec proteinModels protein-spec [options]</pre>
+<p>For parent models with child surfaces/pseudobonds, exact-parent selectors such as <b>#!1</b> and <b>#!2</b> are recommended.</p>
+<pre>choldock7 #!1 proteinModels #!2 detectionLevel 0.141 supportLevel 0.05 out C:/work/cholesterol_v7</pre>
+<h3>Algorithm</h3>
+<p>V7 detects high-contour rod-like candidate density, estimates the membrane from a protein-subtracted and smoothed experimental map, rigid-body docks CLR, tests both head-tail orientations, performs weak-site rescue, and jointly optimizes neighboring rods to avoid a tilted ligand stealing a neighboring site.</p>
+<h3>Confidence</h3>
+<p>HIGH, MEDIUM, and LOW are evidence tiers, not occupancy probabilities. Confidence uses density support, local mask occupancy, OH orientation, membrane association, neighboring-density overlap, rescue status, and ambiguity of the joint neighbor assignment.</p>
+<h3>Diagnostics</h3>
+<p><b>site_diagnostics.csv</b> records generated/refined pose counts and rejection counts for protein clash, low support, outside-mask placement, inward OH, neighbor intrusion, and joint-optimization exclusion. The best rejected pose is summarized to help diagnose visually convincing unfilled sites.</p>
+<h3>Main options</h3><ul>
+<li><b>detectionLevel</b> absolute high-confidence map contour (default 0.141)</li>
+<li><b>supportLevel</b> lower map level used to support the full CLR (default 0.05)</li>
+<li><b>orientations</b> random PCA-guided starting poses per site (default 1500)</li>
+<li><b>maxsites</b> maximum candidate rods (default 60)</li>
+<li><b>proteinMapResolution</b> calculated protein map resolution for membrane subtraction (default 6 A)</li>
+<li><b>blobSmoothing</b> residual-map Gaussian smoothing sigma (default 3 A)</li>
+<li><b>blobThresholdFraction</b> positive residual threshold as fraction of maximum (default 0.10)</li>
+<li><b>proteinMaskRadius</b> remove residual density near protein for membrane segmentation only (default 2.5 A)</li>
+</ul>
+</body></html>

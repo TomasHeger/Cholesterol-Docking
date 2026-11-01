@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: ChimeraX-CholesterolDocking
+Version: 0.7.0
+Summary: Automated cholesterol docking into cryo-EM density
+Home-page: https://www.rbvi.ucsf.edu/chimerax/
+Author: Tomas Heger
+Author-email: tom.chnapik@gmail.com
+Classifier: Framework :: ChimeraX
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Freeware
+Classifier: Environment :: MacOS X :: Aqua
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: ChimeraX :: Bundle :: Structure Analysis :: 1,1 :: chimerax.cholesterol_docking ::  :: 
+Classifier: ChimeraX :: Command :: choldock7 :: Structure Analysis :: Automated multi-site cholesterol docking into cryo-EM density
+Classifier: ChimeraX :: Tool :: Cholesterol Docking V7 :: Structure Analysis :: Automated cholesterol docking and diagnostics
+Requires-Python: >=3.7
+Requires-Dist: ChimeraX-Core~=1.0
+Requires-Dist: ChimeraX-UI~=1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Detects membrane-associated cholesterol-like density, rigid-body docks CLR, rescues head-tail orientation, jointly optimizes neighboring rods, classifies confidence, and records detailed rejection diagnostics.
