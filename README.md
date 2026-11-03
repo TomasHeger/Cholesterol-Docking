@@ -133,6 +133,20 @@ The high-, medium-, and low-confidence classifications represent evidence tiers 
 
 All automated cholesterol assignments should be inspected manually before biological interpretation, further refinement, or inclusion in a final structural model.
 
+## Methodological basis and citations
+
+Cholesterol Docking V7 is implemented in Python using UCSF ChimeraX APIs. Cholesterol coordinates and chemical information are obtained from the PDB Chemical Component Dictionary (CCD component `CLR`).
+
+The membrane-detection workflow was developed with reference to published approaches for identifying membrane-associated density in cryo-EM maps, particularly MemBlob and SURFER. These methods informed the use of protein-density subtraction and analysis of residual membrane-associated density. No source code from MemBlob, SURFER, or PPM was incorporated into this software.
+
+Please cite the following where appropriate:
+
+- Pettersen EF, et al. **UCSF ChimeraX: Structure visualization for researchers, educators, and developers.** *Protein Science* (2021). https://doi.org/10.1002/pro.3943
+- Westbrook JD, et al. **The chemical component dictionary: complete descriptions of constituent molecules in experimentally determined 3D macromolecules in the Protein Data Bank.** *Bioinformatics* (2015). https://doi.org/10.1093/bioinformatics/btu789
+- Csizmadia G, et al. **Using MemBlob to Analyze Transmembrane Regions Based on Cryo-EM Maps.** *Methods in Molecular Biology* (2020). https://doi.org/10.1007/978-1-0716-0270-6_9
+- Bharadwaj A, Veerbeek L, Jakobi AJ. **Interactive segmentation of membrane and membrane-mimic densities in cryo-EM maps.** *Acta Crystallographica Section D: Structural Biology* (2026). https://doi.org/10.1107/S205979832600598X
+
 ## License
 
 This project is distributed under the MIT License. See the `LICENSE` file for details.
+
